@@ -1,0 +1,13 @@
+{
+  "name": "yggdrasil-portal-marvel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portal acadêmico estático sobre personagens do universo Marvel.",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}

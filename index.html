@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yggdrasil: um portal comunitário para explorar personagens do universo Marvel.">
+  <title>Yggdrasil | Início</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand site-logo" href="index.html">Yggdrasil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir ou fechar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="eventos.html">Personagens</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Sobre e contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal" tabindex="-1">
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="container hero-content">
+        <p class="eyebrow">Um universo de histórias</p>
+        <h1 id="titulo-principal">Conecte-se aos mundos da Marvel</h1>
+        <p class="hero-copy">Conheça heróis, vilões e personagens que fazem parte de histórias extraordinárias. Explore o portal Yggdrasil no seu ritmo.</p>
+        <a class="btn btn-primary" href="#personagens">Explorar personagens</a>
+      </div>
+    </section>
+
+    <section class="section-space" aria-labelledby="titulo-destaques">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Em destaque</p>
+          <h2 id="titulo-destaques">Poder, estratégia e mistério</h2>
+          <p>O Doutor Destino ocupa o centro das atenções do nosso portal.</p>
+        </div>
+        <article class="feature-card">
+          <img
+              src="img/images (1).jpg"
+              alt="Doutor Destino"
+              class="feature-image">
+          <div class="feature-copy">
+            <p class="eyebrow">Personagem em foco</p>
+            <h3>Doutor Destino</h3>
+            <p>Victor von Doom é o governante da Latvéria e um dos adversários mais conhecidos do Quarteto Fantástico.</p>
+            <button class="btn btn-outline-light favorite-button" type="button" data-character="Doutor Destino" aria-pressed="false">Adicionar aos favoritos</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-space section-muted" id="personagens" aria-labelledby="titulo-personagens">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Conheça outros nomes</p>
+          <h2 id="titulo-personagens">Personagens em destaque</h2>
+        </div>
+        <div class="character-grid">
+          <article class="character-card">
+            <img
+              src="img/iron.jpg"
+              alt="Homem de Ferro"
+              class="character-image">
+
+            <div class="character-card-body">
+              <h3>Homem de Ferro</h3>
+              <p>Tony Stark é um inventor que usa uma armadura tecnológica para proteger as pessoas.</p>
+              <button class="btn btn-outline-primary favorite-button" type="button" data-character="Homem de Ferro" aria-pressed="false">Adicionar aos favoritos</button>
+            </div>
+          </article>
+          <article class="character-card">
+            <img
+              src="img/thor.jpg"
+              alt="Thor"
+              class="character-image">
+            <div class="character-card-body">
+              <h3>Thor</h3>
+              <p>Thor é um herói ligado a Asgard e conhecido por empunhar o martelo Mjölnir.</p>
+              <button class="btn btn-outline-primary favorite-button" type="button" data-character="Thor" aria-pressed="false">Adicionar aos favoritos</button>
+            </div>
+          </article>
+          <article class="character-card">
+            <img
+              src="img/strange.jpg"
+              alt="Doutor Estranho"
+              class="character-image">
+            <div class="character-card-body">
+              <h3>Doutor Estranho</h3>
+              <p>Stephen Strange é um feiticeiro que protege a Terra de ameaças místicas.</p>
+              <button class="btn btn-outline-primary favorite-button" type="button" data-character="Doutor Estranho" aria-pressed="false">Adicionar aos favoritos</button>
+            </div>
+          </article>
+        </div>
+        <p class="centered-link"><a href="eventos.html">Ver todos os personagens</a></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="visually-hidden site-feedback" role="status" aria-live="polite"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Yggdrasil — projeto comunitário sobre personagens da Marvel.</p>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

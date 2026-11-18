@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saiba mais sobre o Yggdrasil e envie uma mensagem simulada.">
+  <title>Yggdrasil | Sobre e contato</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand site-logo" href="index.html">Yggdrasil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir ou fechar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="eventos.html">Personagens</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html" aria-current="page">Sobre e contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal" tabindex="-1">
+    <section class="page-intro" aria-labelledby="titulo-principal">
+      <div class="container">
+        <p class="eyebrow">Sobre o projeto</p>
+        <h1 id="titulo-principal">Um ponto de encontro para fãs</h1>
+        <p>Yggdrasil é um portal comunitário acadêmico para conhecer personagens e conversar sobre histórias do universo Marvel. O projeto funciona no navegador e não coleta nem envia dados.</p>
+        <button class="btn btn-outline-primary info-toggle" id="botao-como-funciona" type="button" aria-expanded="false" aria-controls="detalhes-portal">Como funciona o portal?</button>
+        <div class="info-panel" id="detalhes-portal" hidden>
+          <p>Explore o catálogo, salve favoritos neste dispositivo e use o formulário abaixo para simular o envio de uma mensagem. Não há conta, servidor ou envio real.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space" aria-labelledby="titulo-contato">
+      <div class="container form-container">
+        <div class="section-heading">
+          <p class="eyebrow">Fale com a comunidade</p>
+          <h2 id="titulo-contato">Formulário de contato</h2>
+          <p>Preencha os campos para testar a validação. O envio é apenas uma simulação local.</p>
+        </div>
+        <form id="formulario-contato" novalidate>
+          <div class="mb-3">
+            <label class="form-label" for="nome">Nome</label>
+            <input class="form-control" id="nome" name="nome" type="text" autocomplete="name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="email">E-mail</label>
+            <input class="form-control" id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="assunto">Assunto</label>
+            <input class="form-control" id="assunto" name="assunto" type="text" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="mensagem">Mensagem</label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Simular envio</button>
+          <p class="form-status" id="status-formulario" role="status" aria-live="polite" tabindex="-1"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="visually-hidden site-feedback" role="status" aria-live="polite"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Yggdrasil — projeto acadêmico comunitário sobre personagens da Marvel.</p>
+      <p>Projeto independente, sem vínculo oficial com a Marvel.</p>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
